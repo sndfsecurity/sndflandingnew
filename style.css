@@ -44,6 +44,26 @@ nav{
 display:flex;
 gap:34px;
 }
+@media (max-width:768px){
+
+  .navbar{
+    padding:20px 15px;
+  }
+
+  .logo{
+    font-size:16px;   /* text chota */
+  }
+
+  .logo-img{
+    width:30px;       /* logo chota */
+  }
+
+  .top-call{
+    padding:8px 14px;
+    font-size:14px;
+  }
+
+}
 /* NAV LINKS */
 
 nav a{
@@ -111,7 +131,7 @@ left:-6px;
 /* CALL BUTTON (unchanged) */
 
 .top-call{
-background:#d89a00;
+background:#1bc308;
 padding:13px 10px;
 border-radius:20px;
 color:white;
@@ -235,7 +255,7 @@ border-radius:24px;
 
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 
-border-top:4px solid #d89a00;
+border-top:4px solid #3dd8c1;
 
 transition:.35s;
 }
@@ -251,13 +271,13 @@ margin-bottom:22px;
 }
 
 .service-card h3{
-font-size:30px;
+font-size:22px;
 margin-bottom:15px;
 color:#17396a;
 }
 
 .service-card p{
-font-size:20px;
+font-size:18px;
 line-height:1.7;
 color:#666;
 }
@@ -504,7 +524,7 @@ padding:90px 20px;
 max-width:620px;
 margin:auto;
 
-background:#0a2342;
+background:#3e6363;
 
 padding:55px 42px;
 
@@ -518,7 +538,7 @@ box-shadow:
 }
 
 .lead-box h2{
-font-size:52px;
+font-size:30px;
 color:#fff;
 text-align:center;
 margin-bottom:14px;
@@ -534,7 +554,7 @@ margin-bottom:30px;
 .quote-strip{
 background:linear-gradient(90deg,#d69300,#f3b321);
 
-padding:18px;
+padding:5px;
 
 text-align:center;
 
@@ -624,7 +644,7 @@ padding:35px 20px;
 }
 
 .lead-box h2{
-font-size:34px;
+font-size:28px;
 }
 
 .lead-box p{
@@ -632,7 +652,7 @@ font-size:16px;
 }
 
 .quote-strip{
-font-size:14px;
+font-size:12px;
 padding:14px;
 }
 
@@ -645,8 +665,8 @@ font-size:19px;
 /* FOOTER */
 
 footer{
-background:#061a3a;
-color:white;
+background:#f6f6f6;
+color:rgb(3, 24, 110);
 padding:25px;
 text-align:center;
 }
@@ -809,7 +829,7 @@ padding:10px 30px;
 
 border-radius:28px;
 
-border-top:5px solid #002bd8;
+border-top:2px solid #002bd8;
 
 box-shadow:0 12px 35px rgba(0,0,0,.08);
 
@@ -836,14 +856,14 @@ background:rgba(216,154,0,.08);
 }
 
 .why-num{
-font-size:56px;
+font-size:30px;
 font-weight:800;
 color:#d89a00;
 margin-bottom:24px;
 }
 
 .why-premium-card h3{
-font-size:32px;
+font-size:25px;
 color:#17396a;
 margin-bottom:18px;
 }
@@ -929,42 +949,51 @@ color:#17396a;
 
 /* FIXED RIGHT SIDE FLOAT BUTTONS */
 
-.float-call,
-.float-wa{
-position:fixed;
-
-right:18px; /* screen cha inside */
-
-width:58px;
-height:58px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-border-radius:50%;
-
-color:#fff;
-text-decoration:none;
-
-font-size:28px;
-
-z-index:9999;
-
-box-shadow:0 8px 20px rgba(0,0,0,.18);
+/* Floating Buttons - PREMIUM */
+.whatsapp-float {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    font-size: 26px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 999;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
 }
 
-.float-call{
-bottom:120px;
-background:#d71919;
+.floating-call {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background: linear-gradient(135deg, #f4a21e, #d88e0c);
+    color: #0b2c4d;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(244, 162, 30, 0.4);
+    transition: all 0.3s ease;
+    z-index: 999;
+    border: none;
 }
 
-.float-wa{
-bottom:50px;
-background:#04de54;
+.whatsapp-float:hover,
+.floating-call:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
-
-
 /* mobile */
 
 @media(max-width:768px){
@@ -989,9 +1018,9 @@ bottom:38px;
 
 }
 .footer{
-background:#061a3a;
+background:#a1adb9;
 padding:35px 20px 20px;
-color:#fff;
+color:#0e0f5e;
 text-align:center;
 }
 
@@ -1004,7 +1033,7 @@ margin:auto;
 font-size:15px;
 line-height:1.6;
 margin-bottom:10px;
-color:#d4dbe6;
+color:#091426;
 }
 
 .footer-bottom{
