@@ -1436,3 +1436,102 @@ font-size:14px;
 }
 
 }
+/* =========================
+ULTRA COMPACT MOBILE GAP FIX
+========================= */
+
+@media (max-width:768px){
+
+/* SECTION */
+.section{
+padding:28px 14px !important;
+}
+
+/* TITLES */
+.section-title{
+margin-bottom:18px !important;
+}
+
+.section-title h2{
+margin-bottom:6px !important;
+line-height:1.25;
+}
+
+.section-title p{
+margin-bottom:0 !important;
+line-height:1.5;
+}
+
+/* SERVICE */
+.service-grid{
+gap:12px !important;
+}
+
+.service-card{
+padding:16px 14px !important;
+margin-bottom:0 !important;
+}
+
+.service-card h3{
+margin-bottom:6px !important;
+}
+
+.service-card p{
+margin-bottom:0 !important;
+}
+
+/* WHY */
+.why-premium{
+padding:30px 14px !important;
+margin-top:-15px !important;
+}
+
+.why-premium-grid{
+gap:12px !important;
+}
+
+.why-premium-card{
+padding:16px 14px !important;
+}
+
+/* EXPERTISE */
+.expertise-strip{
+padding:30px 14px !important;
+}
+
+.expertise-row{
+padding:16px !important;
+gap:10px !important;
+}
+
+/* TESTIMONIAL */
+.elite-testimonials{
+gap:12px !important;
+}
+
+.elite-card{
+padding:16px 14px !important;
+}
+
+/* CONTACT */
+.contact-pro{
+padding:30px 14px !important;
+}
+
+/* REMOVE SECTION GAP */
+.section + .section{
+margin-top:0 !important;
+}
+
+/* REMOVE EXTRA ELEMENT GAP */
+h1,h2,h3,p{
+margin-top:0;
+margin-bottom:0;
+}
+
+/* HERO SE GAP CONTROL */
+.hero{
+padding-bottom:30px !important;
+}
+
+}
