@@ -131,10 +131,10 @@ left:-6px;
 /* CALL BUTTON (unchanged) */
 
 .top-call{
-background:#1bc308;
+background:#11b599;
 padding:13px 10px;
 border-radius:20px;
-color:white;
+color:rgb(9, 6, 79);
 text-decoration:none;
 }
 /* HERO */
@@ -1534,4 +1534,30 @@ margin-bottom:0;
 padding-bottom:30px !important;
 }
 
+}
+
+/* =========================
+GLOBAL SUBTEXT FIX (ALL SECTIONS)
+========================= */
+
+.section-title p{
+  font-size:18px !important;
+  max-width:800px;
+  margin:0 auto;
+  line-height:1.7;
+  color:#555;
+}
+
+/* DESKTOP ENHANCE */
+@media (min-width:1024px){
+  .section-title p{
+    font-size:20px !important;
+  }
+}
+
+/* LARGE SCREEN (PREMIUM LOOK) */
+@media (min-width:1400px){
+  .section-title p{
+    font-size:22px !important;
+  }
 }
