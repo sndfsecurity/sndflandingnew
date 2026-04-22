@@ -1078,3 +1078,220 @@ font-size:12px;
 }
 
 }
+/* =========================
+GLOBAL RESPONSIVE FIX
+========================= */
+
+img{
+max-width:100%;
+height:auto;
+}
+
+.section{
+padding:70px 20px !important;
+}
+
+.section-title h2{
+font-size:38px !important;
+line-height:1.2;
+}
+
+.section-title p{
+font-size:16px !important;
+padding:0 10px;
+}
+
+/* =========================
+TABLET (1024px)
+========================= */
+
+@media (max-width:1024px){
+
+.hero h1{
+font-size:42px !important;
+}
+
+.hero p{
+font-size:18px !important;
+}
+
+.service-grid{
+grid-template-columns:repeat(2,1fr) !important;
+}
+
+.why-premium-grid{
+grid-template-columns:repeat(2,1fr) !important;
+}
+
+.elite-testimonials{
+grid-template-columns:repeat(2,1fr) !important;
+}
+
+.expertise-row{
+flex-wrap:wrap;
+}
+
+}
+
+/* =========================
+MOBILE (768px)
+========================= */
+
+@media (max-width:768px){
+
+/* NAVBAR FIX */
+.navbar{
+padding:12px 15px !important;
+}
+
+.logo{
+font-size:18px !important;
+}
+
+.logo-img{
+width:35px !important;
+}
+
+/* HERO FIX */
+.hero{
+padding:90px 15px 50px !important;
+}
+
+.hero h1{
+font-size:30px !important;
+}
+
+.hero p{
+font-size:15px !important;
+}
+
+.btn{
+font-size:16px !important;
+padding:14px 18px !important;
+}
+
+/* SERVICE */
+.service-grid{
+grid-template-columns:1fr !important;
+gap:20px;
+}
+
+.service-card{
+padding:25px 18px !important;
+}
+
+/* WHY */
+.why-premium-grid{
+grid-template-columns:1fr !important;
+}
+
+.why-premium-card{
+padding:25px 18px !important;
+}
+
+/* TESTIMONIAL */
+.elite-testimonials{
+grid-template-columns:1fr !important;
+}
+
+.elite-card{
+padding:25px 18px !important;
+}
+
+/* EXPERTISE */
+.expertise-strip{
+padding:60px 15px !important;
+}
+
+.expertise-row{
+flex-direction:column !important;
+gap:20px;
+}
+
+.expertise-item h3{
+font-size:20px !important;
+}
+
+.expertise-item span{
+font-size:16px !important;
+}
+
+/* CONTACT */
+.lead-box{
+padding:30px 18px !important;
+}
+
+.lead-box h2{
+font-size:24px !important;
+}
+
+.lead-box p{
+font-size:15px !important;
+}
+
+/* FLOAT BUTTON FIX */
+.whatsapp-float{
+width:50px;
+height:50px;
+font-size:22px;
+right:12px;
+bottom:90px;
+}
+
+.floating-call{
+width:50px;
+height:50px;
+font-size:22px;
+right:12px;
+bottom:25px;
+}
+
+}
+
+/* =========================
+SMALL MOBILE (480px)
+========================= */
+
+@media (max-width:480px){
+
+.hero h1{
+font-size:26px !important;
+}
+
+.section-title h2{
+font-size:26px !important;
+}
+
+.section-title p{
+font-size:14px !important;
+}
+
+.btn{
+font-size:14px !important;
+}
+
+}
+
+/* =========================
+BIG SCREEN (1400px+)
+========================= */
+
+@media (min-width:1400px){
+
+.section{
+padding:120px 80px;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.hero p{
+font-size:24px;
+}
+
+.service-grid{
+max-width:1300px;
+}
+
+}
