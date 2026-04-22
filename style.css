@@ -283,42 +283,6 @@ color:#666;
 }
 
 
-/* WHY */
-
-/* .why-wrap{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-max-width:1100px;
-margin:auto;
-}
-
-.why-box{
-background:#0d2d61;
-color:white;
-padding:55px 40px;
-border-radius:24px;
-}
-
-.why-box span{
-font-size:60px;
-font-weight:800;
-opacity:.25;
-display:block;
-margin-bottom:15px;
-}
-
-.why-box h3{
-font-size:30px;
-margin-bottom:14px;
-}
-
-.why-box p{
-font-size:20px;
-line-height:1.6;
-} */
-
-
 /* EXPERTISE */
 /* ===== EXPERTISE STRIP ===== */
 
@@ -785,14 +749,6 @@ padding:32px 24px;
 font-size:20px;
 }
 
-/* CONTACT */
-.contact-mini{
-padding:30px 22px;
-}
-
-.contact-mini h2{
-font-size:30px;
-}
 
 /* FLOAT ICONS */
 .float-call,
