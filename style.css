@@ -1382,3 +1382,37 @@ padding:12px !important;
 }
 
 }
+/* =========================
+REMOVE EXTRA GAP (MOBILE FIX)
+========================= */
+
+@media (max-width:768px){
+
+/* SECTION GAP FIX */
+.section{
+padding-top:20px !important;
+padding-bottom:20px !important;
+}
+
+/* CARD BOTTOM GAP REMOVE */
+.service-card{
+margin-bottom:0 !important;
+}
+
+/* NEXT SECTION TOP GAP FIX */
+.why-premium{
+margin-top:-30px !important;
+padding-top:70px !important;
+}
+
+/* REMOVE UNWANTED SPACE */
+.section + .section{
+margin-top:0 !important;
+}
+
+/* EXTRA SAFE FIX */
+.service-grid{
+margin-bottom:0 !important;
+}
+
+}
