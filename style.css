@@ -1372,3 +1372,67 @@ margin-bottom:0 !important;
 }
 
 }
+
+/* =========================
+HERO MOBILE PERFECT SPACING
+========================= */
+
+@media (max-width:768px){
+
+.hero{
+padding:95px 16px 60px !important;
+text-align:center;
+}
+
+/* BADGE */
+.badge{
+font-size:13px;
+padding:8px 14px;
+margin-bottom:14px;
+display:inline-block;
+}
+
+/* MAIN HEADING */
+.hero h1{
+font-size:26px !important;
+line-height:1.35;
+letter-spacing:-0.5px;
+margin-bottom:16px;
+}
+
+/* SUBTEXT */
+.hero p{
+font-size:14px !important;
+line-height:1.6;
+margin-bottom:22px;
+max-width:300px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* BUTTONS CONTAINER */
+.hero-btns{
+flex-direction:column;
+gap:12px;
+align-items:center;
+}
+
+/* BUTTON STYLE */
+.btn{
+width:100%;
+max-width:280px;
+padding:14px 16px;
+font-size:15px;
+border-radius:12px;
+}
+
+/* TRUST LINE */
+.trust-line{
+margin-top:22px;
+display:grid;
+grid-template-columns:1fr;
+gap:8px;
+font-size:14px;
+}
+
+}
