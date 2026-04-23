@@ -372,37 +372,38 @@
   <!-- SCRIPT -->
   <script>
 
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
+    
+document.getElementById("contactForm").addEventListener("submit", function (e) {
 
-      var name = document.getElementById("name").value.trim();
-      var phone = document.getElementById("phone").value.trim();
+  var name = document.getElementById("name").value.trim();
+  var phone = document.getElementById("phone").value.trim();
+  var requirements = document.querySelector("textarea[name='requirements']").value.trim();
 
-      if (name === "") {
-        alert("Enter Name");
-        e.preventDefault();
-        return;
-      }
+  if (name === "") {
+    alert("Enter Name");
+    e.preventDefault();
+    return;
+  }
 
-      if (phone === "") {
-        alert("Enter Mobile Number");
-        e.preventDefault();
-        return;
-      }
+  if (phone === "") {
+    alert("Enter Mobile Number");
+    e.preventDefault();
+    return;
+  }
 
-      if (!/^[0-9]{10}$/.test(phone)) {
-        alert("Enter valid 10 digit Mobile Number");
-        e.preventDefault();
-        return;
-      }
+  if (!/^[0-9]{10}$/.test(phone)) {
+    alert("Enter valid 10 digit Mobile Number");
+    e.preventDefault();
+    return;
+  }
 
-      if (requirements === "") {
-        alert("Enter Your Requirements");
-        e.preventDefault();
-        return;
-      }
+  if (requirements === "") {
+    alert("Enter Your Requirements");
+    e.preventDefault();
+    return;
+  }
 
-    });
-
+});
   </script>
 
 </body>
