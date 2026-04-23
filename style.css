@@ -1561,3 +1561,7 @@ GLOBAL SUBTEXT FIX (ALL SECTIONS)
     font-size:22px !important;
   }
 }
+.footer-contact p span{
+  color: rgb(176, 8, 8);
+  text-decoration-color: rgb(210, 75, 54);
+}
