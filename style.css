@@ -1572,7 +1572,7 @@ GLOBAL SUBTEXT FIX (ALL SECTIONS)
   .section-title p{
     letter-spacing: -0.3px !important; 
     word-spacing: -1px !important;       
-    line-height: 1.5 !important;         
+    line-height: 1 !important;         
   }
 
 }
