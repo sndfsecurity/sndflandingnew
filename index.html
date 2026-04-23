@@ -301,32 +301,40 @@
         ⚡ Free quote in 2 hours
       </div>
 
-      <form id="contactForm">
+      <form id="contactForm" 
+      action="https://formsubmit.co/sndfsecurity@gmail.com" 
+      method="POST">
 
-        <input type="text" id="name" name="name" placeholder="Full Name"
-          oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')">
+  <input type="text" id="name" name="name" placeholder="Full Name"
+    oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')" required>
 
-        <input type="tel" id="phone" name="phone" placeholder="+91"
-          maxlength="10"
-          oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+  <input type="tel" id="phone" name="phone" placeholder="+91"
+    maxlength="10"
+    oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
 
-        <input type="text" name="city" placeholder="City / Location">
+  <input type="text" name="city" placeholder="City / Location">
 
-        <select name="service">
-          <option>Select Security Service all Maharashtra</option>
-          <option>VIP Protection</option>
-          <option>Licensed Armed Security</option>
-          <option>Quick Response Team</option>
-          <option>Industrial Security</option>
-          <option>Male & Female Bouncers</option>
-          <option>Commercial Security</option>
-        </select>
+  <select name="service" required>
+    <option value="">Select Security Service all Maharashtra</option>
+    <option>VIP Protection</option>
+    <option>Licensed Armed Security</option>
+    <option>Quick Response Team</option>
+    <option>Industrial Security</option>
+    <option>Male & Female Bouncers</option>
+    <option>Commercial Security</option>
+  </select>
 
-        <textarea name="requirements" placeholder="Your Requirements"></textarea>
+  <textarea name="requirements" placeholder="Your Requirements" required></textarea>
 
-        <button type="submit">Get Security Now</button>
+  <!-- Hidden fields (IMPORTANT) -->
+  <input type="hidden" name="_subject" value="🚨 New SNDF Enquiry">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://sndfsecurity.in/thankyou.html">
+  <input type="hidden" name="_captcha" value="false">
 
-      </form>
+  <button type="submit">Get Security Now</button>
+
+</form>
 
       <div class="privacy-note">
         Your information is 100% private.
