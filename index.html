@@ -381,11 +381,11 @@
   <script>
 
     
+
 document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   var name = document.getElementById("name").value.trim();
   var phone = document.getElementById("phone").value.trim();
-  var requirements = document.querySelector("textarea[name='requirements']").value.trim();
 
   if (name === "") {
     alert("Enter Name");
@@ -405,9 +405,10 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     return;
   }
 
-  
+  // ❌ Requirements validation removed (optional field)
 
 });
+
   </script>
 
 </body>
