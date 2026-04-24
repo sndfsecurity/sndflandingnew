@@ -1603,10 +1603,11 @@ justify-content:space-between;
 align-items:center;
 padding:18px 22px;
 border-bottom:1px solid rgba(255,255,255,.1);
+
 }
 
 .privacy-header h2{
-color:#ee7e0e;
+color:#dc6c11;
 font-size:22px;
 }
 
@@ -1653,3 +1654,4 @@ width:6px;
 background:#f4a21e;
 border-radius:10px;
 }
+
