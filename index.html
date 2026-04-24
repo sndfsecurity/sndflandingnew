@@ -311,65 +311,66 @@
 
 
   <!-- CONTACT -->
-  <section id="contact" class="contact-pro">
+ <section id="contact" class="contact-pro">
 
-    <div class="lead-box">
+  <div class="lead-box">
 
-      <h2>Request Security Services</h2>
+    <h2>Request Security Services</h2>
 
-      <p>Quick response. Trained guards. Reliable protection.</p>
+    <p>Quick response. Trained guards. Reliable protection.</p>
 
-      <div class="quote-strip">
-        ⚡ Free quote in 2 hours
-      </div>
+    <div class="quote-strip">
+      ⚡ Free quote in 2 hours
+    </div>
 
-      <form id="contactForm" 
+    <form id="contactForm" 
       action="https://formsubmit.co/sndfsecurity@gmail.com" 
       method="POST">
 
-  <input type="text" id="name" name="name" placeholder="Full Name"
-    oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')" required>
+      <input type="text" id="name" name="name" placeholder="Full Name"
+        oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')" required>
 
-  <input type="tel" id="phone" name="phone" placeholder="+91"
-    maxlength="10"
-    oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
+      <input type="tel" id="phone" name="phone" placeholder="+91"
+        maxlength="10"
+        oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
 
-  <input type="text" name="city" placeholder="City / Location">
+      <input type="text" name="city" placeholder="City / Location">
 
-  <select name="service" required>
-    <option value="">Select Security Service all Maharashtra</option>
-    <option>VIP Protection</option>
-    <option>Licensed Armed Security</option>
-    <option>Quick Response Team</option>
-    <option>Industrial Security</option>
-    <option>Male & Female Bouncers</option>
-    <option>Commercial Security</option>
-  </select>
+      <select name="service" required>
+        <option value="">Select Security Service all Maharashtra</option>
+        <option>VIP Protection</option>
+        <option>Licensed Armed Security</option>
+        <option>Quick Response Team</option>
+        <option>Industrial Security</option>
+        <option>Male & Female Bouncers</option>
+        <option>Commercial Security</option>
+      </select>
 
-
-  <!-- Hidden fields (IMPORTANT) -->
-  <input type="hidden" name="_subject" value="🚨 New SNDF Enquiry">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next" value="https://sndfsecurity.in/thankyou.html">
-  <input type="hidden" name="_captcha" value="false">
-<textarea name="requirements" placeholder="Your Requirements (Optional)"></textarea>
-  <button type="submit">Get Security Now</button>
-  
-</form>
-
-      <div class="privacy-note">
-        Your information is 100% private.
-      </div>
-
-      <input type="hidden" name="_subject" value="🚨 New SndfGuard Enquiry">
+      <!-- Hidden fields -->
+      <input type="hidden" name="_subject" value="🚨 New SNDF Enquiry">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://sndfsecurity.in//thankyou.html">
+      <input type="hidden" name="_next" value="https://sndfsecurity.in/thankyou.html">
       <input type="hidden" name="_captcha" value="false">
 
-    </div>
+      <textarea name="requirements" placeholder="Your Requirements (Optional)"></textarea>
 
-  </section>
+      <button type="submit">Get Security Now</button>
 
+      <!-- ✅ FINAL (SINGLE LINE) -->
+      <div class="privacy-note">
+        Your information is 100% private.
+        <span class="privacy-link" onclick="openPrivacyModal()">
+                      <a href="#" class="privacy-link">Privacy Policy</a>
+
+        </span>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</section>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -393,7 +394,6 @@
         Govt. Licensed & Insured |
         24/7 Protection
       </p>
-      <a href="#" class="privacy-link">Privacy Policy</a>
     </div>
 
   </footer>
