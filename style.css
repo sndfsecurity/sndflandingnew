@@ -1655,3 +1655,10 @@ background:#f4a21e;
 border-radius:10px;
 }
 
+.privacy-link{
+  color:#eefdf9;
+  font-weight:700;
+  margin-left:6px;
+  cursor:pointer;
+  text-decoration:underline;
+}
