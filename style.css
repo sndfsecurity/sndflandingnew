@@ -1566,3 +1566,90 @@ GLOBAL SUBTEXT FIX (ALL SECTIONS)
   text-decoration-color: rgb(210, 75, 54);
 }
 
+/* =========================
+PRIVACY MODAL
+========================= */
+
+.privacy-modal{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.privacy-box{
+background:#0d2d61;
+width:90%;
+max-width:800px;
+margin:80px auto;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 40px rgba(0,0,0,.4);
+animation:fadeIn .3s ease;
+}
+
+@keyframes fadeIn{
+from{transform:scale(.9);opacity:0;}
+to{transform:scale(1);opacity:1;}
+}
+
+.privacy-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 22px;
+border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.privacy-header h2{
+color:#ee7e0e;
+font-size:22px;
+}
+
+.close-modal{
+font-size:26px;
+color:#fff;
+cursor:pointer;
+}
+
+.privacy-content{
+padding:20px;
+max-height:400px;
+overflow-y:auto;
+}
+
+.privacy-content h3{
+color:#f4a21e;
+margin-bottom:6px;
+margin-top:14px;
+font-size:16px;
+}
+
+.privacy-content p{
+color:#cfd8e3;
+font-size:14px;
+line-height:1.6;
+}
+
+.mail{
+color:#f4a21e;
+}
+
+.last-update{
+margin-top:18px;
+font-size:12px;
+color:#9db1c7;
+}
+
+/* Scrollbar */
+.privacy-content::-webkit-scrollbar{
+width:6px;
+}
+.privacy-content::-webkit-scrollbar-thumb{
+background:#f4a21e;
+border-radius:10px;
+}
