@@ -90,43 +90,50 @@
   <!-- HERO -->
   <section id="home" class="hero">
 
-    <div class="hero-box">
+  <!-- SLIDER -->
+  <div class="hero-slider">
+    <img src="images/guard.webp" class="slide active">
+    <img src="images/guard4.webp" class="slide">
+    <img src="images/guard9.webp" class="slide">
+  </div>
 
-      <span class="badge">
-       Professional Security Guards
-      </span>
+  <!-- CONTENT (UNCHANGED DESIGN) -->
+  <div class="hero-box">
 
-      <h1>
-        Maharashtra<br>
-       Trusted Security Services
-      </h1>
+    <span class="badge">
+      Professional Security Guards
+    </span>
 
-      <p>
-        Licensed, verified and trained security personnel available 24/7.
-      </p>
+    <h1>
+      Maharashtra<br>
+      Trusted Security Services
+    </h1>
 
-      <div class="hero-btns">
+    <p>
+      Licensed, verified and trained security personnel available 24/7.
+    </p>
 
-        <a href="#contact" class="btn gold">
-          Get Free Quote
-        </a>
+    <div class="hero-btns">
 
-        <a href="tel:8956159490" class="btn ghost">
-          Call Now
-        </a>
+      <a href="#contact" class="btn gold">
+        Get Free Quote
+      </a>
 
-      </div>
-
-      <div class="trust-line">
-        <span>✔ Govt Licensed</span>
-        <span>✔ Verified Guards</span>
-        <span>✔ 24/7 Response</span>
-      </div>
+      <a href="tel:8956159490" class="btn ghost">
+        Call Now
+      </a>
 
     </div>
 
-  </section>
+    <div class="trust-line">
+      <span>✔ Govt Licensed</span>
+      <span>✔ Verified Guards</span>
+      <span>✔ 24/7 Response</span>
+    </div>
 
+  </div>
+
+</section>
 
   <!-- SERVICES -->
   <section id="services" class="section light">
@@ -511,6 +518,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+// HERO SLIDER
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
 
 </script>
 
