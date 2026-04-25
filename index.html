@@ -77,20 +77,14 @@
 
 
   <!-- FLOATING BUTTONS -->
-  <div class="top-contact">
-
-  <a href="tel:+918956159490" 
-     onclick="gtag('event', 'call_click');">
-    Call Now
+  <a href="https://wa.me/918956159490" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
   </a>
 
-  <a href="https://wa.me/918956159490" 
-     target="_blank"
-     onclick="gtag('event', 'whatsapp_click');">
-    Chat on WhatsApp
-  </a>
-
-</div>
+  <button class="floating-call"
+    onclick="window.location.href='tel:+918956159490'">
+    <i class="fas fa-phone"></i>
+  </button>
 
 
   <!-- HERO -->
@@ -349,11 +343,9 @@
       ⚡ Free quote in 2 hours
     </div>
 
-    <!-- ✅ FORM START -->
     <form id="contactForm" 
       action="https://formsubmit.co/sndfsecurity@gmail.com" 
-      method="POST"
-      onsubmit="gtag('event', 'form_submit');">
+      method="POST">
 
       <input type="text" id="name" name="name" placeholder="Full Name"
         oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')" required>
@@ -384,17 +376,22 @@
 
       <button type="submit">Get Security Now</button>
 
+      <!-- ✅ FINAL (SINGLE LINE) -->
       <div class="privacy-note">
         Your information is 100% private.
-        <a href="#" class="privacy-link">Privacy Policy</a>
+        <span class="privacy-link" onclick="openPrivacyModal()">
+                      <a href="#" class="privacy-link">Privacy Policy</a>
+
+        </span>
+
       </div>
 
     </form>
-    <!-- ✅ FORM END -->
 
   </div>
 
 </section>
+
   <!-- FOOTER -->
   <footer class="footer">
 
