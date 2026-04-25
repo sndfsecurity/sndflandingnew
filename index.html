@@ -77,14 +77,29 @@
 
 
   <!-- FLOATING BUTTONS -->
-  <a href="https://wa.me/918956159490" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <!-- ✅ WhatsApp Floating Button -->
+<a href="https://wa.me/918956159490" 
+   class="whatsapp-float" 
+   target="_blank"
+   onclick="gtag('event', 'whatsapp_click');">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
-  <button class="floating-call"
-    onclick="window.location.href='tel:+918956159490'">
-    <i class="fas fa-phone"></i>
-  </button>
+<!-- ✅ Call Floating Button -->
+<button class="floating-call"
+  onclick="gtag('event', 'call_click'); window.location.href='tel:+918956159490';">
+  <i class="fas fa-phone"></i>
+</button>
+
+<!-- ✅ Call Text Link -->
+<a href="tel:+918956159490" onclick="gtag('event', 'call_click');">
+  Call Now
+</a>
+
+<!-- ✅ WhatsApp Text Link -->
+<a href="https://wa.me/918956159490" onclick="gtag('event', 'whatsapp_click');">
+  Chat on WhatsApp
+</a>
 
 
   <!-- HERO -->
@@ -343,9 +358,11 @@
       ⚡ Free quote in 2 hours
     </div>
 
+    <!-- ✅ FORM START -->
     <form id="contactForm" 
       action="https://formsubmit.co/sndfsecurity@gmail.com" 
-      method="POST">
+      method="POST"
+      onsubmit="gtag('event', 'form_submit');">
 
       <input type="text" id="name" name="name" placeholder="Full Name"
         oninput="this.value=this.value.replace(/[^A-Za-z\s]/g,'')" required>
@@ -376,22 +393,17 @@
 
       <button type="submit">Get Security Now</button>
 
-      <!-- ✅ FINAL (SINGLE LINE) -->
       <div class="privacy-note">
         Your information is 100% private.
-        <span class="privacy-link" onclick="openPrivacyModal()">
-                      <a href="#" class="privacy-link">Privacy Policy</a>
-
-        </span>
-
+        <a href="#" class="privacy-link">Privacy Policy</a>
       </div>
 
     </form>
+    <!-- ✅ FORM END -->
 
   </div>
 
 </section>
-
   <!-- FOOTER -->
   <footer class="footer">
 
